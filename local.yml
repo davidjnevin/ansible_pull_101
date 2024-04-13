@@ -4,6 +4,11 @@
    become: true
 
    tasks:
-   - name: install htop
+   - name: install htop, mc, cmatrix, nvim, tmux
      package:
-       name: htop
+       name:
+       - htop
+       - mc
+       - cmatrix
+       - nvim
+       - tmux
