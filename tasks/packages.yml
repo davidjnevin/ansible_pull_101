@@ -1,14 +1,8 @@
----
- - hosts: localhost
-   connection: local
-   become: true
-
-   tasks:
-   - name: install htop, mc, cmatrix, neovim, tmux
-     package:
-       name:
-       - htop
-       - mc
-       - cmatrix
-       - neovim
-       - tmux
+- name: install htop, mc, cmatrix, neovim, tmux
+  package:
+    name:
+    - htop
+    - mc
+    - cmatrix
+    - neovim
+    - tmux
